@@ -23,13 +23,12 @@ sudo rm -f liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
 
 #
 # postgresql jdbc driver needs to be covered as well ...
-# 
+#
 cp /requiredswforsw360/packages/postgresql-42.2.9.jar /opt/liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/lib/ext
-cd /liferay-ce-portal-7.2.1-ga2
+cd liferay-ce-portal-7.2.1-ga2
 sudo wget 'https://github.com/dineshr93/sw360/raw/10.0.0-M1/frontend/configuration/portal-ext.properties'
-cd /
 
-cd /tomcat-9.0.17/bin
+cd tomcat-9.0.17/bin
 
 echo "Removing setenv.sh"
 sudo rm setenv.sh
@@ -39,3 +38,4 @@ sudo wget 'https://github.com/dineshr93/sw360/raw/10.0.0-M1/frontend/configurati
 echo "Copied!"
 
 echo "-[shell provisioning] end of installing liferay."
+
