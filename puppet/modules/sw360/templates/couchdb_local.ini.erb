@@ -17,8 +17,8 @@ os_process_timeout=60000
 fti=/usr/bin/java -jar /opt/couchdb-lucene-*-jar-with-dependencies.jar -search
 
 [httpd]
-port = <%= @couchdb_bind_port %>
-bind_address = <%= @couchdb_bind_address %>
+port = 5984
+bind_address = 127.0.0.1
 ; Options for the MochiWeb HTTP server.
 ;server_options = [{backlog, 128}, {acceptor_pool_size, 16}]
 ; For more socket options, consult Erlang's module 'inet' man page.
