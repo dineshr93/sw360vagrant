@@ -36,7 +36,10 @@ https://search.maven.org/remotecontent?filepath=com/fasterxml/jackson/core/jacks
 https://search.maven.org/remotecontent?filepath=com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar jackson-databind-2.9.8.jar
 https://jdbc.postgresql.org/download/postgresql-42.2.9.jar postgresql-42.2.9.jar
 https://dist.apache.org/repos/dist/release/thrift/0.11.0/thrift-0.11.0.tar.gz
-https://github.com/rnewson/couchdb-lucene/archive/v1.0.2.tar.gz ./couchdb-lucene.tar.gz'
+https://github.com/rnewson/couchdb-lucene/archive/v1.0.2.tar.gz ./couchdb-lucene.tar.gz
+https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/shared/couchdb-lucene.ini couchdb-lucene.ini
+https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/shared/couchdb-lucene.patch couchdb-lucene.patch
+https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/shared/configuration.rb configuration.rb'
 
 # -----------------------------------------------------------------------------
 #   Functions
