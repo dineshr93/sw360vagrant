@@ -22,8 +22,7 @@
 #
 # downloading all the big downloads
 #
-packages='https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-vagrant.box
-https://downloads.sourceforge.net/project/lportal/Liferay%20Portal/7.2.1%20GA2/liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Flportal%2Ffiles%2Flatest%2Fdownload&ts=1579524847&use_mirror=netcologne liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
+packages='https://downloads.sourceforge.net/project/lportal/Liferay%20Portal/7.2.1%20GA2/liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Flportal%2Ffiles%2Flatest%2Fdownload&ts=1579524847&use_mirror=netcologne liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
 https://search.maven.org/remotecontent?filepath=commons-codec/commons-codec/1.12/commons-codec-1.12.jar commons-codec-1.12.jar
 https://search.maven.org/remotecontent?filepath=org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar commons-collections4-4.1.jar
 https://search.maven.org/remotecontent?filepath=org/apache/commons/commons-csv/1.4/commons-csv-1.4.jar commons-csv-1.4.jar
@@ -37,8 +36,7 @@ https://search.maven.org/remotecontent?filepath=com/fasterxml/jackson/core/jacks
 https://search.maven.org/remotecontent?filepath=com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar jackson-databind-2.9.8.jar
 https://jdbc.postgresql.org/download/postgresql-42.2.9.jar postgresql-42.2.9.jar
 https://dist.apache.org/repos/dist/release/thrift/0.11.0/thrift-0.11.0.tar.gz
-https://github.com/rnewson/couchdb-lucene/archive/v1.0.2.tar.gz ./couchdb-lucene.tar.gz
-https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box'
+https://github.com/rnewson/couchdb-lucene/archive/v1.0.2.tar.gz ./couchdb-lucene.tar.gz'
 
 # -----------------------------------------------------------------------------
 #   Functions
@@ -105,15 +103,15 @@ setPermissions(){
     find . -type f -name '*.sh' -exec chmod o+x {} \;
     popd &>/dev/null
 }
-addBoxToVagrant(){
-        vagrant box add --force xenial-server-cloudimg-amd64-vagrant "xenial-server-cloudimg-amd64-vagrant.box"
-        vagrant box add --force aws-dummy "dummy.box"
-}
+#addBoxToVagrant(){
+#        vagrant box add --force xenial-server-cloudimg-amd64-vagrant "xenial-server-cloudimg-amd64-vagrant.box"
+#        vagrant box add --force aws-dummy "dummy.box"
+#}
 
 # -----------------------------------------------------------------------------
 #   Run
 # -----------------------------------------------------------------------------
-DIR=$(realpath "$( dirname $0 )/shared/packages")
+DIR=$(realpath "$( dirname $0 )/packages")
 mkdir -p "$DIR" && pushd "$DIR" &>/dev/null
 case $1 in
     --clean)
@@ -124,7 +122,7 @@ case $1 in
         ;;
     *)
         downloadAll
-        addBoxToVagrant
+        #addBoxToVagrant
         setPermissions $(dirname $DIR)
     ;;
 esac
