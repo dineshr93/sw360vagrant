@@ -18,7 +18,7 @@ echo "-[shell provisioning] Start installing liferay ..."
 sudo cp /requiredswforsw360/packages/liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz /opt
 cd /opt
 sudo tar -xvf liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
-sudo chown -R nb475598:nb475598 liferay-ce-portal-7.2.1-ga2
+#sudo chown -R nb475598:nb475598 liferay-ce-portal-7.2.1-ga2
 sudo rm -f liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
 
 #
