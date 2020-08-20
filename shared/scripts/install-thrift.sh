@@ -22,7 +22,7 @@ apt-get update
 apt-get install -y libboost-dev libboost-test-dev libboost-program-options-dev libevent-dev automake libtool flex bison pkg-config g++ libssl-dev
 
 echo "-[shell provisioning] Extracting thrift"
-tar -xzf /vagrant_shared/packages/thrift-0.11.0.tar.gz -C /tmp/
+tar -xzf /requiredswforsw360/packages/thrift-0.11.0.tar.gz -C /tmp/
 
 pushd /tmp/thrift-0.11.0/ &>/dev/null
 
