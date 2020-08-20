@@ -119,7 +119,7 @@ setPermissions(){
 # -----------------------------------------------------------------------------
 #   Run
 # -----------------------------------------------------------------------------
-DIR=$(realpath "$( dirname $0 )/requiredswforsw360/packages")
+DIR=$(realpath "$( dirname $0 )/packages")
 mkdir -p "$DIR" && pushd "$DIR" &>/dev/null
 case $1 in
     --clean)
