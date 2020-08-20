@@ -1,0 +1,87 @@
+Start https://github.com/eclipse/sw360/wiki/Deploy-Natively#deploy-couchdb
+
+1. Install CouchDB
+
+https://docs.couchdb.org/en/stable/install/unix.html#dependencies
+   28  sudo apt-get --no-install-recommends -y install     build-essential pkg-config erlang     libicu-dev libmozjs185-dev libcurl4-openssl-dev
+   29  sudo apt-get install -y apt-transport-https gnupg ca-certificates
+   30  echo "deb https://apache.bintray.com/couchdb-deb bionic main"     | sudo tee -a /etc/apt/sources.list.d/couchdb.list
+   31  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys   8756C4F765C9AC3CB6B85D62379CE192D401AB61
+   32  sudo apt update
+   33  sudo apt install -y couchdb
+
+   
+2. install thrift
+
+  130  sudo apt-get update
+  131  sudo apt-get install libssl-dev
+  132  sudo make
+  133  sudo ./configure
+  134  sudo make
+  135  sudo make install
+  136  sudo apt-get install python3-dev
+  137  sudo make install
+  138  sudo apt-get install python-dev
+  139  sudo make install
+  140  thrift -v
+  141  thrift -version
+  
+  
+mvn package -P deploy -Dbase.deploy.dir=/sw360chores/_deploy -DskipTests
+  
+./sw360chores.pl --prod --build --webapps=/code/sw360chores/_deploy/tomcat --deploy=/code/sw360chores/_deploy/liferay -- up
+
+
+VBoxManage modifyhd 'C:\Users\dira271641\VirtualBox VMs\Ubuntu 18.04\Ubuntu 18.04.vdi' --resize 100920
+
+ldap://ldap01.ebgroup.elektrobit.com:3268
+DC=ebgroup,DC=elektrobit,DC=com
+srv_fossology
+!fPXhZkLa20QbCSz6fV!
+(&(objectClass=user)(sAMAccountName={0}))
+
+Group Search Filter:
+(& (cn={0}) (objectclass=group) )
+
+
+lastName=sn
+screenName=uid
+
+User Custom Mappings: 
+organization=department
+
+
+http://fossology.ebgroup.elektrobit.com:8880/repo/api/v1   
+1
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmb3Nzb2xvZ3kuZWJncm91cC5lbGVrdHJvYml0LmNvbSIsImF1ZCI6ImZvc3NvbG9neS5lYmdyb3VwLmVsZWt0cm9iaXQuY29tIiwiZXhwIjoxNTkwODgzMTk5LCJuYmYiOjE1ODgyMDQ4MDAsImp0aSI6Ik15NHhNQT09Iiwic2NvcGUiOiJ3cml0ZSJ9.LhVhhPeuDmcDvtDN__o1g3-qZ95R0s8XNPIbbkoSwTI
+
+   
+   
+   
+sudo mvn package -P deploy -Dbase.deploy.dir=. -Dliferay.deploy.dir=/opt/liferay-ce-portal-7.2.1-ga2/deploy -Dbackend.deploy.dir=/opt/liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/webapps -Drest.deploy.dir=/opt/liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/webapps -DskipTests
+
+
+mvn package -P deploy -Dbase.deploy.dir=. -Dliferay.deploy.dir=${LIFERAY_INSTALL}/deploy -Dbackend.deploy.dir=${LIFERAY_INSTALL}/tomcat-9.0.17/webapps -Drest.deploy.dir=${LIFERAY_INSTALL}/tomcat-9.0.17/webapps
+
+
+
+cp /sw360portal/frontend/configuration/setenv.sh /opt/liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin/
+
+sudo cp /sw360portal/frontend/configuration/portal-ext.properties /opt/liferay-ce-portal-7.2.1-ga2/
+
+
+startup
+/opt/liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin
+
+
+logs
+/opt/liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/logs
+
+
+cd /requiredswforsw360/packages/
+sudo cp commons-codec-1.12.jar commons-collections4-4.1.jar commons-csv-1.4.jar commons-io-2.6.jar commons-lang-2.4.jar commons-logging-1.2.jar gson-2.8.5.jar guava-21.0.jar jackson-annotations-2.9.8.jar jackson-core-2.9.8.jar jackson-databind-2.9.8.jar /opt/liferay-ce-portal-7.2.1-ga2/deploy
+
+
+
+https://denue6pr259.ebgroup.elektrobit.com:8443/
+   
