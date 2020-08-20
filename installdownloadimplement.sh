@@ -7,12 +7,14 @@ echo $JAVA_HOME
 
 sudo apt-get install couchdb -y
 
-sudo wget https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/download-packages.sh
 
-sudo bash liferay-install.sh
-sudo bash install-lucene.sh
-sudo bash install-bundle-deps.sh
-sudo bash etcsw360Prepare.sh
+
+sudo wget -P /requiredswforsw360 https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/download-packages.sh
+
+sudo bash /requiredswforsw360/packages/liferay-install.sh
+sudo bash /requiredswforsw360/packages/install-lucene.sh
+sudo bash /requiredswforsw360/packages/install-bundle-deps.sh
+sudo bash /requiredswforsw360/packages/etcsw360Prepare.sh
 
 cd /
 
