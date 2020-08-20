@@ -1,5 +1,6 @@
 
 #### Trigger sudo wget https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/installdownloadimplement.sh
+### sudo bash installdownloadimplement.sh
 
 
 ### 0. Overview
