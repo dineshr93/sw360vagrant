@@ -19,7 +19,7 @@ set -e
 echo "-[shell provisioning] start installing couchdb-lucene ..."
 
 /bin/tar xvzf /requiredswforsw360/packages/couchdb-lucene.tar.gz -C /tmp
-cp --remove-destination /requiredswforsw360/couchdb-lucene.ini /tmp/couchdb-lucene-1.0.2/src/main/resources/
+cp --remove-destination /requiredswforsw360/packages/couchdb-lucene.ini /tmp/couchdb-lucene-1.0.2/src/main/resources/
 pushd /tmp/couchdb-lucene-1.0.2
 patch -p1 </requiredswforsw360/couchdb-lucene.patch
 mvn clean install war:war
