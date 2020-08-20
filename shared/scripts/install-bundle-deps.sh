@@ -17,16 +17,16 @@ echo "-[shell provisioning] start installing bundle dependencies ..."
 #
 # coyping all jar files from the required bundle dependencies
 # 
-cp /vagrant_shared/packages/commons-codec-1.12.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/commons-codec-1.12.jar
-cp /vagrant_shared/packages/commons-collections4-4.1.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/commons-collections4-4.1.jar
-cp /vagrant_shared/packages/commons-csv-1.4.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/commons-csv-1.4.jar 
-cp /vagrant_shared/packages/commons-io-2.6.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/commons-io-2.6.jar 
-cp /vagrant_shared/packages/commons-lang-2.4.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/commons-lang-2.4.jar 
-cp /vagrant_shared/packages/commons-logging-1.2.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/commons-logging-1.2.jar
-cp /vagrant_shared/packages/gson-2.8.5.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/gson-2.8.5.jar
-cp /vagrant_shared/packages/guava-21.0.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/guava-21.0.jar
-cp /vagrant_shared/packages/jackson-annotations-2.9.8.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/jackson-annotations-2.9.8.jar 
-cp /vagrant_shared/packages/jackson-core-2.9.8.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/jackson-core-2.9.8.jar
-cp /vagrant_shared/packages/jackson-databind-2.9.8.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/jackson-databind-2.9.8.jar
+cp /requiredswforsw360/packages/commons-codec-1.12.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/commons-codec-1.12.jar
+cp /requiredswforsw360/packages/commons-collections4-4.1.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/commons-collections4-4.1.jar
+cp /requiredswforsw360/packages/commons-csv-1.4.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/commons-csv-1.4.jar 
+cp /requiredswforsw360/packages/commons-io-2.6.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/commons-io-2.6.jar 
+cp /requiredswforsw360/packages/commons-lang-2.4.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/commons-lang-2.4.jar 
+cp /requiredswforsw360/packages/commons-logging-1.2.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/commons-logging-1.2.jar
+cp /requiredswforsw360/packages/gson-2.8.5.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/gson-2.8.5.jar
+cp /requiredswforsw360/packages/guava-21.0.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/guava-21.0.jar
+cp /requiredswforsw360/packages/jackson-annotations-2.9.8.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/jackson-annotations-2.9.8.jar 
+cp /requiredswforsw360/packages/jackson-core-2.9.8.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/jackson-core-2.9.8.jar
+cp /requiredswforsw360/packages/jackson-databind-2.9.8.jar  /opt/liferay-ce-portal-7.2.1-ga2/deploy/jackson-databind-2.9.8.jar
 
 echo "-[shell provisioning] end of installing bundle dependencies."
