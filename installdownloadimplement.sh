@@ -22,8 +22,8 @@ sudo bash etcsw360Prepare.sh
 
 cd /
 
-sudo git clone https://github.com/dineshr93/sw360.git
-git checkout sw360-8.2.0-M1
+sudo git clone https://github.com/eclipse/sw360.git
+sudo git checkout sw360-8.2.0-M1
 
 cd sw360
 sudo mvn package -P deploy -Dbase.deploy.dir=. -Dliferay.deploy.dir=/opt/liferay-ce-portal-7.2.1-ga2/deploy -Dbackend.deploy.dir=/opt/liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/webapps -Drest.deploy.dir=/opt/liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/webapps -DskipTests
