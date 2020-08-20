@@ -11,11 +11,14 @@ sudo apt-get install couchdb -y
 
 sudo wget -P /requiredswforsw360 https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/download-packages.sh
 
-sudo bash /requiredswforsw360/download-packages.sh
-sudo bash /requiredswforsw360/packages/liferay-install.sh
-sudo bash /requiredswforsw360/packages/install-lucene.sh
-sudo bash /requiredswforsw360/packages/install-bundle-deps.sh
-sudo bash /requiredswforsw360/packages/etcsw360Prepare.sh
+cd requiredswforsw360/
+
+sudo bash download-packages.sh
+cd packages/
+sudo bash liferay-install.sh
+sudo bash install-lucene.sh
+sudo bash install-bundle-deps.sh
+sudo bash etcsw360Prepare.sh
 
 cd /
 
