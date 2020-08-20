@@ -1,0 +1,11 @@
+alias lif='cd /opt/liferay-ce-portal-7.2.1-ga2'
+alias tom='cd /opt/liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin'
+alias log='cd /opt/liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/logs; sudo tail -f -n 5000 catalina.out'
+alias cata='tail -f -n 5000 catalina.out'
+alias cop='sudo systemctl stop couchdb'
+alias cot='sudo systemctl start couchdb'
+alias cos='sudo systemctl status couchdb'
+alias v="sudo vi"
+alias l="ls -rt"
+alias shut="sudo bash shutdown.sh"
+alias start="sudo bash startup.sh"
