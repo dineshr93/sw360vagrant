@@ -43,7 +43,8 @@ https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/shared/configura
 https://github.com/dineshr93/sw360vagrant/raw/master/shared/scripts/install-thrift.sh install-thrift.sh
 https://github.com/dineshr93/sw360vagrant/raw/master/shared/scripts/liferay-install.sh liferay-install.sh
 https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/shared/scripts/install-lucene.sh install-lucene.sh
-https://github.com/dineshr93/sw360vagrant/raw/master/shared/scripts/install-bundle-deps.sh install-bundle-deps.sh'
+https://github.com/dineshr93/sw360vagrant/raw/master/shared/scripts/install-bundle-deps.sh install-bundle-deps.sh
+https://github.com/dineshr93/sw360vagrant/raw/master/etcsw360Prepare.sh etcsw360Prepare.sh'
 
 # -----------------------------------------------------------------------------
 #   Functions
