@@ -39,7 +39,11 @@ https://dist.apache.org/repos/dist/release/thrift/0.11.0/thrift-0.11.0.tar.gz
 https://github.com/rnewson/couchdb-lucene/archive/v1.0.2.tar.gz ./couchdb-lucene.tar.gz
 https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/shared/couchdb-lucene.ini couchdb-lucene.ini
 https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/shared/couchdb-lucene.patch couchdb-lucene.patch
-https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/shared/configuration.rb configuration.rb'
+https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/shared/configuration.rb configuration.rb
+https://github.com/dineshr93/sw360vagrant/raw/master/shared/scripts/install-thrift.sh install-thrift.sh
+https://github.com/dineshr93/sw360vagrant/raw/master/shared/scripts/liferay-install.sh liferay-install.sh
+https://raw.githubusercontent.com/dineshr93/sw360vagrant/master/shared/scripts/install-lucene.sh install-lucene.sh
+https://github.com/dineshr93/sw360vagrant/raw/master/shared/scripts/install-bundle-deps.sh install-bundle-deps.sh'
 
 # -----------------------------------------------------------------------------
 #   Functions
