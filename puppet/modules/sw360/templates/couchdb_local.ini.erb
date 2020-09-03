@@ -40,7 +40,7 @@ bind_address = 127.0.0.1
 
 [httpd_global_handlers]
 ;_google = {couch_httpd_proxy, handle_proxy_req, <<"http://www.google.com">>}
-_fti = {couch_httpd_proxy, handle_proxy_req, <<"http://127.0.0.1:<%=@tomcat_port%>/couchdb-lucene">>}
+_fti = {couch_httpd_proxy, handle_proxy_req, <<"http://localhost:8080/couchdb-lucene">>}
 
 ;[httpd_db_handlers]
 ;_fti = {couch_httpd_external, handle_external_req, <<"fti">>}
